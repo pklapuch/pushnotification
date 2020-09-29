@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3551D9112522BD2B00EC4352 /* PushNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3551D9102522BD2B00EC4352 /* PushNotification.swift */; };
+		3551D91C2522BDDE00EC4352 /* PushSetupSystemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3551D91B2522BDDE00EC4352 /* PushSetupSystemProtocol.swift */; };
+		3551D9212522BDFE00EC4352 /* PushProviderBindingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3551D9202522BDFE00EC4352 /* PushProviderBindingProtocol.swift */; };
+		3551D9252522BE1700EC4352 /* PushSystemPermissionEventProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3551D9242522BE1700EC4352 /* PushSystemPermissionEventProtocol.swift */; };
+		3551D9282522BE2B00EC4352 /* PushSystemRegisterEventProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3551D9272522BE2B00EC4352 /* PushSystemRegisterEventProtocol.swift */; };
+		3551D92B2522BE4100EC4352 /* PushRegistratorTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3551D92A2522BE4100EC4352 /* PushRegistratorTaskProtocol.swift */; };
+		3551D92E2522BE5C00EC4352 /* NotificationSettingsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3551D92D2522BE5C00EC4352 /* NotificationSettingsProtocol.swift */; };
+		3551D9312522BE7300EC4352 /* PushPermissionTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3551D9302522BE7300EC4352 /* PushPermissionTaskProtocol.swift */; };
+		3551D9362522BE9B00EC4352 /* PushRegistratorTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3551D9352522BE9B00EC4352 /* PushRegistratorTask.swift */; };
+		3551D93A2522BEB200EC4352 /* PushPermissionTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3551D9392522BEB200EC4352 /* PushPermissionTask.swift */; };
+		3551D93D2522BF1F00EC4352 /* PushBindingStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3551D93C2522BF1F00EC4352 /* PushBindingStage.swift */; };
+		3551D9402522BF3300EC4352 /* PushAuthorizationStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3551D93F2522BF3300EC4352 /* PushAuthorizationStage.swift */; };
+		3551D9432522BF4500EC4352 /* PushSettingsStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3551D9422522BF4500EC4352 /* PushSettingsStage.swift */; };
+		3551D9462522BF5700EC4352 /* PushRegisterStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3551D9452522BF5700EC4352 /* PushRegisterStage.swift */; };
+		3551D9492522BF6900EC4352 /* PushRegistrationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3551D9482522BF6900EC4352 /* PushRegistrationState.swift */; };
+		3551D94C2522BF8700EC4352 /* PushPermissionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3551D94B2522BF8700EC4352 /* PushPermissionState.swift */; };
+		3551D9502522BFA500EC4352 /* Data+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3551D94F2522BFA500EC4352 /* Data+Hex.swift */; };
+		3551D9582522C03B00EC4352 /* PushNotificationLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3551D9572522C03B00EC4352 /* PushNotificationLogging.swift */; };
+		3551D95C2522C1C000EC4352 /* Error+NSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3551D95B2522C1C000EC4352 /* Error+NSError.swift */; };
+		3551D9602522C26100EC4352 /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3551D95F2522C26100EC4352 /* DataError.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3551D90B2522BD2B00EC4352 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3551D90D2522BD2B00EC4352 /* libPushNotification.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPushNotification.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3551D9102522BD2B00EC4352 /* PushNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotification.swift; sourceTree = "<group>"; };
+		3551D91B2522BDDE00EC4352 /* PushSetupSystemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushSetupSystemProtocol.swift; sourceTree = "<group>"; };
+		3551D9202522BDFE00EC4352 /* PushProviderBindingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushProviderBindingProtocol.swift; sourceTree = "<group>"; };
+		3551D9242522BE1700EC4352 /* PushSystemPermissionEventProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushSystemPermissionEventProtocol.swift; sourceTree = "<group>"; };
+		3551D9272522BE2B00EC4352 /* PushSystemRegisterEventProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushSystemRegisterEventProtocol.swift; sourceTree = "<group>"; };
+		3551D92A2522BE4100EC4352 /* PushRegistratorTaskProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushRegistratorTaskProtocol.swift; sourceTree = "<group>"; };
+		3551D92D2522BE5C00EC4352 /* NotificationSettingsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSettingsProtocol.swift; sourceTree = "<group>"; };
+		3551D9302522BE7300EC4352 /* PushPermissionTaskProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushPermissionTaskProtocol.swift; sourceTree = "<group>"; };
+		3551D9352522BE9B00EC4352 /* PushRegistratorTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushRegistratorTask.swift; sourceTree = "<group>"; };
+		3551D9392522BEB200EC4352 /* PushPermissionTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushPermissionTask.swift; sourceTree = "<group>"; };
+		3551D93C2522BF1F00EC4352 /* PushBindingStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushBindingStage.swift; sourceTree = "<group>"; };
+		3551D93F2522BF3300EC4352 /* PushAuthorizationStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushAuthorizationStage.swift; sourceTree = "<group>"; };
+		3551D9422522BF4500EC4352 /* PushSettingsStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushSettingsStage.swift; sourceTree = "<group>"; };
+		3551D9452522BF5700EC4352 /* PushRegisterStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushRegisterStage.swift; sourceTree = "<group>"; };
+		3551D9482522BF6900EC4352 /* PushRegistrationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushRegistrationState.swift; sourceTree = "<group>"; };
+		3551D94B2522BF8700EC4352 /* PushPermissionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushPermissionState.swift; sourceTree = "<group>"; };
+		3551D94F2522BFA500EC4352 /* Data+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Hex.swift"; sourceTree = "<group>"; };
+		3551D9572522C03B00EC4352 /* PushNotificationLogging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationLogging.swift; sourceTree = "<group>"; };
+		3551D95B2522C1C000EC4352 /* Error+NSError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+NSError.swift"; sourceTree = "<group>"; };
+		3551D95F2522C26100EC4352 /* DataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3551D90A2522BD2B00EC4352 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3551D9042522BD2B00EC4352 = {
+			isa = PBXGroup;
+			children = (
+				3551D90F2522BD2B00EC4352 /* PushNotification */,
+				3551D90E2522BD2B00EC4352 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3551D90E2522BD2B00EC4352 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3551D90D2522BD2B00EC4352 /* libPushNotification.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3551D90F2522BD2B00EC4352 /* PushNotification */ = {
+			isa = PBXGroup;
+			children = (
+				3551D9192522BDC800EC4352 /* Public */,
+				3551D9102522BD2B00EC4352 /* PushNotification.swift */,
+			);
+			path = PushNotification;
+			sourceTree = "<group>";
+		};
+		3551D9192522BDC800EC4352 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				3551D94E2522BF9400EC4352 /* Extension */,
+				3551D91F2522BDF300EC4352 /* Protocol */,
+				3551D9342522BE9200EC4352 /* Model */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		3551D91F2522BDF300EC4352 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				3551D91B2522BDDE00EC4352 /* PushSetupSystemProtocol.swift */,
+				3551D9202522BDFE00EC4352 /* PushProviderBindingProtocol.swift */,
+				3551D9242522BE1700EC4352 /* PushSystemPermissionEventProtocol.swift */,
+				3551D9272522BE2B00EC4352 /* PushSystemRegisterEventProtocol.swift */,
+				3551D92A2522BE4100EC4352 /* PushRegistratorTaskProtocol.swift */,
+				3551D92D2522BE5C00EC4352 /* NotificationSettingsProtocol.swift */,
+				3551D9302522BE7300EC4352 /* PushPermissionTaskProtocol.swift */,
+				3551D9572522C03B00EC4352 /* PushNotificationLogging.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		3551D9342522BE9200EC4352 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3551D9352522BE9B00EC4352 /* PushRegistratorTask.swift */,
+				3551D9392522BEB200EC4352 /* PushPermissionTask.swift */,
+				3551D93C2522BF1F00EC4352 /* PushBindingStage.swift */,
+				3551D93F2522BF3300EC4352 /* PushAuthorizationStage.swift */,
+				3551D9422522BF4500EC4352 /* PushSettingsStage.swift */,
+				3551D9452522BF5700EC4352 /* PushRegisterStage.swift */,
+				3551D9482522BF6900EC4352 /* PushRegistrationState.swift */,
+				3551D94B2522BF8700EC4352 /* PushPermissionState.swift */,
+				3551D95F2522C26100EC4352 /* DataError.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3551D94E2522BF9400EC4352 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3551D94F2522BFA500EC4352 /* Data+Hex.swift */,
+				3551D95B2522C1C000EC4352 /* Error+NSError.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3551D90C2522BD2B00EC4352 /* PushNotification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3551D9142522BD2B00EC4352 /* Build configuration list for PBXNativeTarget "PushNotification" */;
+			buildPhases = (
+				3551D9092522BD2B00EC4352 /* Sources */,
+				3551D90A2522BD2B00EC4352 /* Frameworks */,
+				3551D90B2522BD2B00EC4352 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PushNotification;
+			productName = PushNotification;
+			productReference = 3551D90D2522BD2B00EC4352 /* libPushNotification.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3551D9052522BD2B00EC4352 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					3551D90C2522BD2B00EC4352 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = 3551D9082522BD2B00EC4352 /* Build configuration list for PBXProject "PushNotification" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3551D9042522BD2B00EC4352;
+			productRefGroup = 3551D90E2522BD2B00EC4352 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3551D90C2522BD2B00EC4352 /* PushNotification */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3551D9092522BD2B00EC4352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3551D9252522BE1700EC4352 /* PushSystemPermissionEventProtocol.swift in Sources */,
+				3551D93D2522BF1F00EC4352 /* PushBindingStage.swift in Sources */,
+				3551D9362522BE9B00EC4352 /* PushRegistratorTask.swift in Sources */,
+				3551D92B2522BE4100EC4352 /* PushRegistratorTaskProtocol.swift in Sources */,
+				3551D9582522C03B00EC4352 /* PushNotificationLogging.swift in Sources */,
+				3551D9492522BF6900EC4352 /* PushRegistrationState.swift in Sources */,
+				3551D9312522BE7300EC4352 /* PushPermissionTaskProtocol.swift in Sources */,
+				3551D91C2522BDDE00EC4352 /* PushSetupSystemProtocol.swift in Sources */,
+				3551D9432522BF4500EC4352 /* PushSettingsStage.swift in Sources */,
+				3551D9502522BFA500EC4352 /* Data+Hex.swift in Sources */,
+				3551D9602522C26100EC4352 /* DataError.swift in Sources */,
+				3551D9282522BE2B00EC4352 /* PushSystemRegisterEventProtocol.swift in Sources */,
+				3551D9212522BDFE00EC4352 /* PushProviderBindingProtocol.swift in Sources */,
+				3551D9402522BF3300EC4352 /* PushAuthorizationStage.swift in Sources */,
+				3551D95C2522C1C000EC4352 /* Error+NSError.swift in Sources */,
+				3551D93A2522BEB200EC4352 /* PushPermissionTask.swift in Sources */,
+				3551D9112522BD2B00EC4352 /* PushNotification.swift in Sources */,
+				3551D92E2522BE5C00EC4352 /* NotificationSettingsProtocol.swift in Sources */,
+				3551D94C2522BF8700EC4352 /* PushPermissionState.swift in Sources */,
+				3551D9462522BF5700EC4352 /* PushRegisterStage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3551D9122522BD2B00EC4352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3551D9132522BD2B00EC4352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3551D9152522BD2B00EC4352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y545S76C5X;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3551D9162522BD2B00EC4352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y545S76C5X;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3551D9082522BD2B00EC4352 /* Build configuration list for PBXProject "PushNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3551D9122522BD2B00EC4352 /* Debug */,
+				3551D9132522BD2B00EC4352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3551D9142522BD2B00EC4352 /* Build configuration list for PBXNativeTarget "PushNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3551D9152522BD2B00EC4352 /* Debug */,
+				3551D9162522BD2B00EC4352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3551D9052522BD2B00EC4352 /* Project object */;
+}
