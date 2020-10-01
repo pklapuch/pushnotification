@@ -7,7 +7,7 @@
 
 import Foundation
 
-class PushPermissionTask {
+public class PushPermissionTask {
 
     private let queue = DispatchQueue(label: "pn_perm_service")
     private var onSuccess: PushPermissionTaskSuccess?
@@ -20,7 +20,7 @@ class PushPermissionTask {
     private var authorization = PushAuthorizationStage()
     private var settings = PushSettingsStage()
     
-    init(system: PushSetupSystemProtocol?, provider: PushProviderBindingProtocol) {
+    public init(system: PushSetupSystemProtocol?, provider: PushProviderBindingProtocol) {
         
         self.systemDelegate = system
         self.providerDelegate = provider
@@ -97,7 +97,7 @@ class PushPermissionTask {
 
 extension PushPermissionTask: PushSystemPermissionEventProtocol {
         
-    func didReceiveAuthorization(_ granted: Bool , error: Swift.Error?) {
+    public func didReceiveAuthorization(_ granted: Bool , error: Swift.Error?) {
         
         queue.async {
         
@@ -119,7 +119,7 @@ extension PushPermissionTask: PushSystemPermissionEventProtocol {
         }
     }
     
-    func didReceiveSettings(_ settings: NotificationSettingsProtocol) {
+    public func didReceiveSettings(_ settings: NotificationSettingsProtocol) {
         
         queue.async {
         
@@ -133,7 +133,7 @@ extension PushPermissionTask: PushSystemPermissionEventProtocol {
 
 extension PushPermissionTask: PushPermissionTaskProtocol {
     
-    func start(onSuccess: @escaping PushPermissionTaskSuccess, onFailure: @escaping PushPermissionTaskFailure) {
+    public func start(onSuccess: @escaping PushPermissionTaskSuccess, onFailure: @escaping PushPermissionTaskFailure) {
         
         queue.async {
             

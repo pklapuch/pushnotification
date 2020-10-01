@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol PushSetupSystemProtocol: class {
+public protocol PushSetupSystemProtocol: class {
 
     var isRegisteredForRemoteNotifications: Bool { get }
     

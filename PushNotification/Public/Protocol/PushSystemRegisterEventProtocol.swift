@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol PushSystemRegisterEventProtocol: class {
+public protocol PushSystemRegisterEventProtocol: class {
 
     func didRegisterForRemoteNotificationsWithDeviceToken(_ deviceToken: Data)
     

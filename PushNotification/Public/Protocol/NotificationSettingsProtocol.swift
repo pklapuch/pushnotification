@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol NotificationSettingsProtocol {
+public protocol NotificationSettingsProtocol {
 
     var isAuthorized: Bool { get }
     

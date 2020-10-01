@@ -153,11 +153,22 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		35887D82252568450015E04F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		3551D90C2522BD2B00EC4352 /* PushNotification */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3551D9142522BD2B00EC4352 /* Build configuration list for PBXNativeTarget "PushNotification" */;
 			buildPhases = (
+				35887D82252568450015E04F /* Headers */,
 				3551D9092522BD2B00EC4352 /* Sources */,
 				3551D90A2522BD2B00EC4352 /* Frameworks */,
 				3551D90B2522BD2B00EC4352 /* CopyFiles */,

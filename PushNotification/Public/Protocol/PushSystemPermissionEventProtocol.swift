@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol PushSystemPermissionEventProtocol: class {
+public protocol PushSystemPermissionEventProtocol: class {
     
     func didReceiveAuthorization(_ granted: Bool , error: Swift.Error?)
     

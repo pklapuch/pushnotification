@@ -7,11 +7,18 @@
 
 import Foundation
 
-class PushRegistratorTask: NSObject {
+public class PushRegistratorTask: NSObject {
     
     fileprivate struct PushErrorCode {
         
         static let notSupported = 3010
+    }
+    
+    public enum SimulationMode {
+        
+        case none
+        
+        case simulate(token: Data)
     }
 
     private let queue = DispatchQueue(label: "pn_service")
@@ -26,9 +33,11 @@ class PushRegistratorTask: NSObject {
     private var authorization = PushAuthorizationStage()
     private var settings = PushSettingsStage()
     private var registration = PushRegisterStage()
+    
+    public var simulationMode = SimulationMode.none
     private(set) var didComplete: Bool = false
     
-    init(system: PushSetupSystemProtocol?, provider: PushProviderBindingProtocol) {
+    public init(system: PushSetupSystemProtocol?, provider: PushProviderBindingProtocol) {
         
         self.systemDelegate = system
         self.providerDelegate = provider
@@ -115,7 +124,7 @@ class PushRegistratorTask: NSObject {
 
 extension PushRegistratorTask: PushSystemRegisterEventProtocol {
       
-    func didRegisterForRemoteNotificationsWithDeviceToken(_ deviceToken: Data) {
+    public func didRegisterForRemoteNotificationsWithDeviceToken(_ deviceToken: Data) {
         
         queue.async {
         
@@ -126,7 +135,7 @@ extension PushRegistratorTask: PushSystemRegisterEventProtocol {
         }
     }
     
-    func didFailToRegisterForRemoteNotificationsWithError(_ error: Swift.Error) {
+    public func didFailToRegisterForRemoteNotificationsWithError(_ error: Swift.Error) {
         
         queue.async {
             
@@ -134,16 +143,21 @@ extension PushRegistratorTask: PushSystemRegisterEventProtocol {
             
             if (error.code == PushErrorCode.notSupported) {
                 
-                // DEBUG OVERRIDE
+                switch self.simulationMode {
                 
-                self.registration.token = Data(hexString: "914BC7BB6BC02A62E367ADEF3DCAC3F466DD35B94E841A0118652BC2843011AF")
-                self.supported = false
-                self.updateState()
-                
-//                log.debug("PN: << unable to register -> unsupported by device")
-//                self.supported = false
-//                self.updateState()
-                
+                case .none:
+                    
+                    PushNotification.log?.apiLog(message: "PN: << unable to register -> unsupported by device", type: .error)
+                    self.supported = false
+                    self.updateState()
+                    
+                case .simulate(token: let token):
+                    
+                    self.registration.token = token
+                    self.supported = false
+                    self.updateState()
+                }
+     
             } else {
                 
                 PushNotification.log?.apiLog(message: "PN: << failed to register remote notifications: \(error.localizedDescription)", type: .debug)
@@ -155,7 +169,7 @@ extension PushRegistratorTask: PushSystemRegisterEventProtocol {
 
 extension PushRegistratorTask: PushRegistratorTaskProtocol {
     
-    func start(onSuccess:@escaping PushRegistratorTaskSuccess, onFailure:@escaping PushRegistratorTaskFailure) {
+    public func start(onSuccess:@escaping PushRegistratorTaskSuccess, onFailure:@escaping PushRegistratorTaskFailure) {
       
         self.queue.async {
       

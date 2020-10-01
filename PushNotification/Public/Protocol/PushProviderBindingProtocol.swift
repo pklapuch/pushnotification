@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol PushProviderBindingProtocol: class {
+public protocol PushProviderBindingProtocol: class {
     
     func setPushSystemPermissionEventDelegate(_ delegate: PushSystemPermissionEventProtocol,
                                               completion: @escaping () -> Void)

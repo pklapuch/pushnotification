@@ -11,18 +11,23 @@ import Foundation
 Represents last known app/system remote notifications state
 State is refreshed: on app launch and on PN authorization changes
  */
-struct PushPermissionState {
+public struct PushPermissionState {
     
-    let granted: Bool
-    let authorized: Bool
+    public let granted: Bool
+    public let authorized: Bool
     
-    static var unknown: PushPermissionState {
+    public init(granted: Bool, authorized: Bool) {
+        self.granted = granted
+        self.authorized = authorized
+    }
+    
+    public static var unknown: PushPermissionState {
         
         return PushPermissionState(granted: false,
                                    authorized: false)
     }
 
-    var description: String {
+    public var description: String {
         
         var components = [String]()
         if !granted { components.append("not granted!") }

@@ -7,10 +7,10 @@
 
 import Foundation
 
-typealias PushPermissionTaskSuccess = (PushPermissionState) -> Void
-typealias PushPermissionTaskFailure = (Swift.Error) -> Void
+public typealias PushPermissionTaskSuccess = (PushPermissionState) -> Void
+public typealias PushPermissionTaskFailure = (Swift.Error) -> Void
 
-protocol PushPermissionTaskProtocol: class {
+public protocol PushPermissionTaskProtocol: class {
 
     func start(onSuccess:@escaping PushPermissionTaskSuccess,
                onFailure:@escaping PushPermissionTaskFailure)

@@ -7,10 +7,10 @@
 
 import Foundation
 
-typealias PushRegistratorTaskSuccess = (PushRegistrationState) -> Void
-typealias PushRegistratorTaskFailure = (Swift.Error) -> Void
+public typealias PushRegistratorTaskSuccess = (PushRegistrationState) -> Void
+public typealias PushRegistratorTaskFailure = (Swift.Error) -> Void
 
-protocol PushRegistratorTaskProtocol {
+public protocol PushRegistratorTaskProtocol {
     
     func start(onSuccess:@escaping PushRegistratorTaskSuccess,
                onFailure:@escaping PushRegistratorTaskFailure)
