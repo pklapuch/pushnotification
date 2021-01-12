@@ -13,8 +13,8 @@ State is refreshed: on app launch and on PN authorization changes
  */
 public struct PushRegistrationState {
     
-    let supported: Bool
-    let deviceToken: Data?
+    public let supported: Bool
+    public let deviceToken: Data?
     
     public static var unknown: PushRegistrationState {
         
