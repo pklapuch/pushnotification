@@ -27,7 +27,7 @@ public struct PushRegistrationState {
         
         var components = [String]()
         if !supported { components.append("not supported by device!") }
-        if let token = deviceToken { components.append("token: \(token.hexString)") }
+        if let token = deviceToken { components.append("token: \(token.count) bytes") }
         return components.joined(separator: ";")
     }
 }
